@@ -6,10 +6,15 @@ const Navbar = ()=>{
             <nav>
             <Link to="/">Discord</Link>
                 <ul>
-                    
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/download">Download</Link></li>
+                    <li><Link to="/nitro">Nitro</Link></li>
+                    <li><Link to="/discover">Discover</Link></li>
+                    <li><Link to="/safety">Safety</Link></li>
+                    <li><Link to="/support">Support</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
+                    <li><Link to="/careers">Careers</Link></li>
                 </ul>
+                <Link to="/login">Login</Link> 
             </nav>
         </div>
     )
