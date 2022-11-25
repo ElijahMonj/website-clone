@@ -1,11 +1,12 @@
 import React from "react";
 import {Link,NavLink} from 'react-router-dom'
+import discordlogowhite from './discordlogowhite.svg'
 const Navbar = ()=>{
     return (
-        <div nav-container>
+        <div className="nav-container">
             <nav>
-            <Link to="/">Discord</Link>
-                <ul>
+            <Link to="/"><img src={discordlogowhite} id="logoHome"></img></Link>
+                <ul className="navBarLinks">
                     <li><Link to="/download">Download</Link></li>
                     <li><Link to="/nitro">Nitro</Link></li>
                     <li><Link to="/discover">Discover</Link></li>
@@ -14,7 +15,7 @@ const Navbar = ()=>{
                     <li><Link to="/blog">Blog</Link></li>
                     <li><Link to="/careers">Careers</Link></li>
                 </ul>
-                <Link to="/login">Login</Link> 
+                <Link to="/login" id="login">Login</Link> 
             </nav>
         </div>
     )

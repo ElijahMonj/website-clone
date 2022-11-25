@@ -18,6 +18,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
+    <div className='main-container'>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />}>
@@ -39,6 +40,7 @@ function App() {
         <Route path="/login" element={<Login />}>
         </Route>
       </Routes>
+      </div>
     </BrowserRouter>
   );
 }
