@@ -8,7 +8,28 @@ import hangoutImage from './images/hangout-image.svg'
 import fandomImage from './images/fandom-image.svg'
 import reliableImage from './images/reliable-image.svg'
 import sparkles from './images/sparkles.svg'
+import Footer from './Footer'
 const Home = () =>{
+    function osfunction ()
+{
+    let os = navigator.userAgent;
+    let finalOs="";
+    if (os.search('Windows')!==-1){
+        finalOs="Windows";
+    }
+    else if (os.search('Mac')!==-1){
+        finalOs="MacOS";
+    }
+    else if (os.search('X11')!==-1 && !(os.search('Linux')!==-1)){
+        finalOs="UNIX";
+    }
+    else if (os.search('Linux')!==-1 && os.search('X11')!==-1){
+        finalOs="Linux"
+    }
+    
+    return finalOs;
+
+}
     return(
         <div className='Home'>
             <div className='imagine'>
@@ -22,7 +43,7 @@ const Home = () =>{
                         <div className='subText'>..where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</div>
                     </div>
                     <div className="dlBtns">
-                        <span className="dlBtn"><img src={DL} className="downloadIcon"></img>Download for Linux</span>
+                        <span className="dlBtn"><img src={DL} className="downloadIcon"></img>Download for {osfunction()}</span>
                         <button className="openBtn">Open Discord in your browser</button>
                         
                     </div>
@@ -76,9 +97,10 @@ const Home = () =>{
                         <div className='readyText'>Ready to start your journey?</div>
                         
                     </div>
-                    <span className="dlBtn2"><img src={DL} className="downloadIcon2"></img>Download for Linux</span>
+                    <span className="dlBtn2"><img src={DL} className="downloadIcon2"></img>Download for {osfunction()}</span>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

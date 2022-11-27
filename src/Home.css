@@ -35,13 +35,30 @@
     z-index: 10;
     margin-right: 24px;
     background-color: aliceblue;
-    
+    transition: .3s;
     align-items: center;
 }
+.dlBtn:hover{
+    color:#404EED;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  }
 .openBtn{
     background-color: #23272a;
     color: white;
+    transition: .3s;
     margin-top: 24px;
+}
+.openBtn:hover{
+    background-color: #36393F;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3) 
+}
+.dlBtn2{
+    transition: .3s;
+}
+.dlBtn2:hover{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #7983F5;
 }
 .dlBtns *{
     padding-top: 16px;

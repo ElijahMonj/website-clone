@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Imported;
+    src: url(./Ginto.woff2);
+}
+.footer-container{
+    background-color:#23272a;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: 280px 80px 180px 180px 180px 180px;
+    
+}
+.footer-links>div{
+    padding-bottom: 40px;
+    border-bottom: 1px solid;
+    border-color: #5865f2;
+}
+.footer-logo{
+   
+}
+.footer-linkslinks{
+    padding: 0;
+}
+.footer-logo img{
+    width: 124px;
+    height: 34px;
+   
+}
+.footer-imagine-text, .footer-links div{
+    color: #5865f2;
+}
+.footer-imagine-text{
+    font-weight: 800;
+    font-family: Imported;
+    line-height: 95%;
+    font-size: 32px;
+}
+.footer-product{
+    font-size: 15px;
+}
+li{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+    font-weight: 300;
+}
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:flex-end;
+    height: 71px;
+}
+.footer-logo button{
+    padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color:#5865f2;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  transition: .3s;
+  border: none;
+}
+.footer-logo button:hover{
+    cursor: pointer;
+    background-color: #7983F5;
+}
+.footer-language{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 24px;
+   
+    gap: 5px;
+}
+.footer-language>*{
+    height: 18px; 
+}
+.current-language{
+    color: white;
+    font-size: 14px;
+}
+.expand-language{
+    filter: invert(82%) sepia(100%) saturate(4481%) hue-rotate(182deg) brightness(117%) contrast(102%);
+}
+.footer-socmed a>*{
+    height: 20px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.footer-socmed{
+    display: flex;
+    gap: 20px;
+}
